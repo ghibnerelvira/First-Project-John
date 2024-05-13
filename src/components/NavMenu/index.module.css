@@ -1,0 +1,24 @@
+ 
+header {
+    width: 100%;
+    padding: 27px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerBtn {
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    gap: 26px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}

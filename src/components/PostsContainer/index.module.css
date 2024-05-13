@@ -1,0 +1,10 @@
+.posts_container{
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width: 600px) {
+    .posts_container{
+        flex-wrap: wrap;
+    }
+}

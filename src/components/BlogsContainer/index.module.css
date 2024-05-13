@@ -1,0 +1,17 @@
+h1{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 44px;
+}
+
+@media(max-width: 600px) {
+    .blogs_container{
+        flex-wrap: wrap;
+    }
+    h1{
+        padding-top: 80px;
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+    
+}

@@ -1,0 +1,37 @@
+.recents_posts_section{
+    background-color: #EDF7FA;
+}
+
+.recents_posts_section > div{
+    padding: 30px 0;
+}
+
+.recents_posts_section > div > div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 22px;
+}
+
+.recents_posts_section > div > div > a{
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+.first_text {
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+
+    .recents_posts_section .first_text {
+        font-size: 18px;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .recents_posts_section .view_all {
+        display: none;
+    }
+
+}

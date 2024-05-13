@@ -1,0 +1,27 @@
+.post_item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+}
+  
+.post_item > div {
+    display: flex;
+    padding-top: 17px;
+    padding-bottom: 11px;
+}
+  
+.post_item > div p:first-child{
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+  
+.post_item > div p:last-child {
+    padding-left: 20px;
+}
+  
+  
+.post_item h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
