@@ -60,7 +60,6 @@ const StyledBurger = styled.button`
     }
   }
 
-  // Additional styles for uniform initial state
   div:nth-child(1) {
     transform: ${({ open }) => (open ? "rotate(45deg)" : "translate(0)")};
   }
@@ -145,7 +144,6 @@ export default function NavMenu() {
     setOpen(!open);
   };
   const closeMenuAndNavigate = (path) => {
-    console.log("Navigating to:", path);
   setOpen(false);
   navigate(path); 
   };
@@ -187,7 +185,7 @@ export default function NavMenu() {
             <div />
         </StyledBurger>
         )}
-        <StyledMenu open={open}>
+        <StyledMenu open={open} ref={node}>
 
         <NavLink to="/" onClick={() => closeMenuAndNavigate("/")}>
         <span role="img" aria-label="home">
@@ -207,8 +205,8 @@ export default function NavMenu() {
         </span>
         Works
         </NavLink>
-        <NavLink to="/contact" onClick={() => closeMenuAndNavigate("/contact")}>
-        <span role="img" aria-label="contact">
+        <NavLink to="/contacts" onClick={() => closeMenuAndNavigate("/contact")}>
+        <span role="img" aria-label="contacts">
             📩
         </span>
         Contacts
